@@ -12,7 +12,10 @@
 <script>
 $(document).ready(function(){
   $("#hide").click(function(){
-    $("footer").hide();
+    $("p").hide();
+  });
+  $("#show").click(function(){
+    $("p").show();
   });
 });
 </script>
@@ -33,6 +36,9 @@ $(document).ready(function(){
 		<br>
 		<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/7o6kbRBFLdI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 		<br>
+		<p>Thanks for visiting!</p>
+		<button id="hide">Hide</button>
+		<button id="show">Show</button>
 </center>
 	</main>
 
@@ -55,10 +61,6 @@ $(document).ready(function(){
 	<br>
 </div>
 	</div>
-	<footer><center>
-	  <p>Thanks for visiting!</p>
 
-	  <button id="hide">Hide</button></center>
-	</footer>
 </body>
 </html>
