@@ -1,0 +1,98 @@
+.container {
+  display:grid;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.3fr 1.3fr 1.8fr 0.5fr;
+  grid-template-areas:
+  "nav nav nav nav"
+  "sidebar main main main"
+  "sidebar content1 content2 content3"
+  "footer footer footer footer";
+  grid-gap: 1em;
+  color: black;
+  }
+  body{
+    background-color: black;
+  }
+    p{
+      font-family: 'Baskervville', serif;
+      font-size: 18px;
+      color: white;
+    }
+nav{
+    background: black;
+    grid-area: nav;
+  		text-align: center;
+  		font-family:serif;
+  		font-size: 48px;
+  		color: #FFFF00;
+  }
+main{
+  text-align: center;
+  background: black;
+  grid-area: main;
+	color: white;
+}
+#sidebar{
+  font-size: 30px;
+}
+.sidebar a {
+  font-size: 25px;
+        }
+.sidebar a:hover {
+	color: black;
+   	background-color: #FFFF00;
+}
+.sidebar a:link, a:visited {
+	background-color: black;
+  color: #F99A00;
+	padding-top: 20px;
+  text-decoration: none;
+  display: inline-block;
+  }
+a.active {
+	color: #FFFF00;
+	font-size: 35px;
+}
+
+#content1{
+  grid-area: content1;
+  background: black;
+	color: white;
+  text-align: center;
+}
+#content2{
+  grid-area: content2;
+  background: black;
+	color: white;
+  text-align: center;
+
+}
+#content3{
+  grid-area: content3;
+  background: black;
+ color: white;
+ text-align: center;
+}
+
+footer {
+  background: black;
+  grid-area: footer;
+  text-align: center;
+color: #FFFF00;
+}
+@media (min-width 56.25em){
+.container{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.2fr 1.8fr 0.8fr 1fr;
+  grid-template-areas:
+  "nav"
+  "sidebar"
+  "main"
+  "content1"
+  "content2"
+  "content3"
+  "footer";
+}
+}
